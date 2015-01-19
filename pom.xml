@@ -9,7 +9,7 @@
 
 	<properties>
 		<build.timestamp>${maven.build.timestamp}</build.timestamp>
-		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format> 
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format> 
 	</properties>
 
 	<dependencies>
