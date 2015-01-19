@@ -6,6 +6,10 @@
 	<packaging>pom</packaging>
 	<name>FIT2CLOUD CodeDeploy WordPress Example</name>
 	<version>4.2</version>
+	
+	<properties>
+		<maven.build.timestamp>${maven.build.timestamp}</maven.build.timestamp>
+	</properties>
 
 	<dependencies>
 	</dependencies>
