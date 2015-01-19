@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.fit2cloud.example</groupId>
+	<artifactId>wordpress</artifactId>
+	<packaging>pom</packaging>
+	<name>FIT2CLOUD CodeDeploy WordPress Example</name>
+	<version>4.2</version>
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.3</version>
+				  <configuration>
+				    <descriptor>assembly.xml</descriptor>
+				  </configuration>
+				<executions>
+                    <execution>
+                        <id>bundle-project-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>fit2cloud-example</id>
+			<name>Fit2Cloud Example Release</name>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>fit2cloud-example</id>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>fit2cloud-public</id>
+			<name>Fit2Cloud Public Repository</name>
+			<url>http://rrepository-proxy.fit2cloud.com:8080/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>fit2cloud-public</id>
+			<name>Fit2Cloud Public Repository</name>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
