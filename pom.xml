@@ -52,7 +52,7 @@
 		<repository>
 			<id>fit2cloud-public</id>
 			<name>Fit2Cloud Public Repository</name>
-			<url>http://rrepository-proxy.fit2cloud.com:8080/content/groups/public/</url>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>

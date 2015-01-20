@@ -12,5 +12,5 @@ Nexus repository访问信息：
 2. groupId: com.fit2cloud.example
 3. artifactId: wordpress
 
-Aliyun oss访问信息：TBD
+Aliyun oss访问信息：http://f2c.oss-cn-hangzhou.aliyuncs.com/WordPress/wordpress-4.2-bin-201501200732-9.zip
 
